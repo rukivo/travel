@@ -14,5 +14,27 @@ wp_enqueue_style('style', get_template_directory_uri() . '/style.css');
 **/
 add_action('wp_enqueue_scripts','load_style_script');
 
+/**
+* Поддержка миниатюр
+**/
+add_theme_support('post-thumbnails');
+
+/**
+* Поддержка меню
+**/
+register_nav_menu( 'menu', 'меню' );
+
+/**
+* Поддержка виджетов
+**/
+register_sidebar(array(
+'name' => 'Виджеты сайдбара',
+'id' => 'sidebar',
+'description' => 'Виджеты сайдбара здесь',
+'before_widget' => '<div class="vidget">',
+'after_widget' => '</div>',
+'before_title' => '<h2>',
+'after_title' => '</h2>',
+	));
 
 ?>

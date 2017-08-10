@@ -18,11 +18,13 @@
 		</div>	
 		<div class="menu-foot">
 			<h2>Страницы</h2>
-			<ul>			
-				<li>- <a href="#">Главная</a></li>
-				<li>- <a href="#">Автор</a></li>
-				<li>- <a href="#">Контакты</a></li>
-			</ul>
+		<?php wp_nav_menu(array(
+		'theme_location' =>'menu', 
+		'container' => false, 
+		'menu_class'=>'',
+		'before'=>'- '
+		)); ?>
+
 		</div>				
 	</div>
 </div>

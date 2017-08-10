@@ -8,6 +8,7 @@ Author URI: http://example.com/
 Tags: one, two
 */
 /* CSS Document */
+
 *{
 	margin:0; padding:0;
 	}
@@ -51,7 +52,7 @@ body{
 				font:18px "Century Gothic"; color:#fff; text-decoration:underline;
 				}		
 	.search-main{
-		float:right; margin: 0 25px 0 0;
+		float:right; margin: -50px 25px 0 0;
 		}		
 		.serch-txt{
 			height:23px; background:#; border:1px solid #fff; width:230px; margin: 0 10px 0 0;
@@ -76,6 +77,7 @@ body{
 			border-radius: 8px;
 			-moz-border-radius: 8px;
 			-webkit-border-radius: 8px;
+			overflow: hidden;
 			}
 			.imgstyle{
 				float:left; margin:0 15px 15px 0;

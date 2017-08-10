@@ -15,16 +15,20 @@
 
 
 	<div class="content-main">
-	<ul class="menu">
-		<li><a href="#">Главная</a></li>
-		<li><a href="#">Автор</a></li>
-		<li><a href="#">Контакты</a></li>
-		<form class="search-main" action="" method="">
+
+<?php wp_nav_menu(array('theme_location' =>'menu', 'container' => false)); ?>
+<form class="search-main" action="" method="">
 			<input class="serch-txt" type="text" name="search" />
 			<input class="serch-btn" type="image" src="<?php bloginfo('template_url') ?>/images/serach-btn.jpg" />
 		</form>
-	</ul>	
-	
+<!--	<ul class="menu">
+		<li><a href="#">Главная</a></li>
+		<li><a href="#">Автор</a></li>
+		<li><a href="#">Контакты</a></li>
+		
+	</ul>	-->
+
+
 	<div id="slider">
 		<ul id="cycle">
 			<li><img src="<?php bloginfo('template_url') ?>/images/galery.jpg" height="266" width="927" alt="Slides" /></li>
