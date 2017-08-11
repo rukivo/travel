@@ -37,4 +37,18 @@ register_sidebar(array(
 'after_title' => '</h2>',
 	));
 
+/**
+* Футер
+**/
+register_sidebar(array(
+'name' => 'Виджеты футера',
+'id' => 'footer',
+'description' => 'Виджеты футера здесь',
+'before_widget' => '<div class="menu-foot">',
+'after_widget' => '</div>',
+'before_title' => '<h2>',
+'after_title' => '</h2>',
+	));
+
+
 ?>

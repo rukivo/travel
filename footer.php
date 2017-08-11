@@ -3,19 +3,17 @@
 			<a href="/"><span>C</span>hoose <span>T</span>ravel</a>
 			<p>Chooce Travel 2011<br />
 			Все права зашишены.<br />
-			Email: contact@chooseTravel.ru</p>
+			Email: <?php bloginfo('admin_email' );?></p>
 		</div>
-		<div class="menu-foot">
+		
+		<?php if(!dynamic_sidebar('footer')): ?>
+			<div class="menu-foot">
 			<h2>Категории</h2>
-			<ul>			
-				<li>- <a href="#">Италия</a></li>
-				<li>- <a href="#">Германия</a></li>
-				<li>- <a href="#">Франция</a></li>
-				<li>- <a href="#">Великобритания</a></li>
-				<li>- <a href="#">Египет</a></li>
-				<li>- <a href="#">АОЭ</a></li>
-			</ul>
-		</div>	
+			<ul>
+			<?php wp_list_categories(array('title_li' => '0')); ?>
+		</div>
+		<?php endif ?>
+
 		<div class="menu-foot">
 			<h2>Страницы</h2>
 		<?php wp_nav_menu(array(
