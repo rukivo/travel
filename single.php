@@ -10,7 +10,7 @@
 <p><?php the_tags(); ?></p>
 				</div>
 			</div>
-
+<?php comments_template(); ?>
 
 <?php endwhile; ?>
 <!-- post navigation -->

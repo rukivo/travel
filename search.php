@@ -1,5 +1,9 @@
 <?php get_header() ?>
 	<div class="content">
+
+<h2 class="page-title">Результаты поиска:</h2>
+
+
 <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 
 <div class="post-main">
@@ -8,7 +12,6 @@
 				<?php the_post_thumbnail('full','class=imgstyle') ?>	
 					<?php the_excerpt(); ?>
 <p><a href="<?php the_permalink(); ?>">Читать далее</a></p>
-<p><?php the_tags(); ?></p>
 				</div>
 			</div>
 
@@ -31,7 +34,7 @@ echo paginate_links( array(
 ?>
 </div>
 <?php else: ?>
-<!-- no posts found -->
+<p>По запросу ничего не найдено</p>
 <?php endif; ?>
 
 

@@ -50,5 +50,23 @@ register_sidebar(array(
 'after_title' => '</h2>',
 	));
 
+/**
+*Слайдер
+**/
+add_action('init','slider');
+function slider() {
+register_post_type('slider', array(
+'public' => true,
+'supports' => array('title','thumbnail'),
+'menu_icon' => 'dashicons-images-alt2',
+'labels' => array(
+	'name' => 'Слайдер',
+	'add_new' => 'Добавить новый',
+	'all_items' => 'Все слайды', 
+	'add_new_item' => 'Добавление слайда'
+	),
+	));
+}
+
 
 ?>
